@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #303030;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 160px;
+    height: 300px;
+    display: inline-block;
+    float: left;  
+    margin-right: 15px;
+    margin-bottom: 15px;  
+}
+
+.card-img {
+    width: inherit;
+    height: 240px;
+}
+
+.card-img img {
+    width: inherit;
+    overflow: hidden;
+}
+
+.card-info {
+    width: inherit;
+    padding: 7px;
+    font-family: Montserrat, sans-serif;
+    color: #303030;
+}
+
+#title, #year {
+    width: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#title {
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+#year {
+    font-size: 15px;
+}

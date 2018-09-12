@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styleva.css">
+    </head>
+    <body background="red">
+        <style>
+            .head{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 25;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: #06F756;
+    line-height: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5); 
+    color: white;
+}
+
+.logo {
+    
+    height: 48px;
+    width: 100px;
+    margin-left: 6px;
+    margin-top: 1px;
+    border-radius: 9px;
+    float: left;
+    display: inline-block;
+}
+
+.search {
+    display: inline;
+    float: right;
+}
+.main
+{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    margin-top: 50px;
+    background-color: rgb(31, 201, 207)
+}
+.search div {  
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: ease all 0.3s;
+}
+
+.search div:hover {
+    border-radius: 19px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+        </style>
+        <div class="head">
+            <div class="logo"><img src="https://previews.123rf.com/images/reginast777/reginast7771506/reginast777150600098/42005007-Cute-cartoon-Owl-with-headphones-Stock-Vector-music-owl-birthday.jpg" height="58px" width="60px"></div>
+            Shape It ,Shape It, Feels Good <b>^_^</b>
+            <div class="search">
+                <div id="in"><input type="text"></div>
+                <div onclick="get()">Find</div>
+            </div>
+        </div>
+        <div class="main">
+        </div>
+        <script src="render.js"></script>
+    </body>
+</html>

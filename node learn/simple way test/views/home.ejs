@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <p>Search</p>
+        <input type="text" id="search">
+        <input type="button" onclick="get()">
+        <script>
+            function get() {
+                var search = document.getElementById('search').value;
+                window.open(window.origin + "/search=" + search, '_self');    
+            }
+            
+        </script>
+    </body>
+</html>

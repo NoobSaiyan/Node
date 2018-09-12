@@ -1,0 +1,30 @@
+<html>
+        <head>
+            <title>Results for <%= search %></title>
+            <% include partials/head.ejs %>
+        </head>
+        <body>
+            <div class="container">
+                <% for(var i = 0; i < data.results.length; i++) { %>
+                <div class="card" onclick="give(i)">
+                    <div class="card-img">
+                        <img src = "https://image.tmdb.org/t/p/w500<%= data.results[i].poster_path%>">
+                    </div>
+                    <div class="card-info">
+                        <p id="title"><%= data.results[i].title %></p>
+                        <p id="year"><%= data.results[i].release_date.split('-', 1) %></p>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+            <script>
+                function give(f)
+                {
+                    if(f=0){
+                        window.open(window.origin + "=next=" + next, '_self');
+                    }
+                    
+                }
+            </script>
+        </body>
+    </html>

@@ -1,0 +1,16 @@
+{
+  "name": "deezer_app",
+  "version": "1.0.0",
+  "description": "deezer search",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "trugamr",
+  "license": "ISC",
+  "dependencies": {
+    "deezer-node-api": "^0.2.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
